@@ -15,6 +15,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 5rem;  
+  box-sizing: border-box;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1200px; 
+  text-align: center;
+}
+
+.video-container h1 {
+  margin-bottom: 1rem;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px; 
+  object-fit: cover;
+}
 
 body {
     background: linear-gradient(180deg, var(--bg), #020814);
