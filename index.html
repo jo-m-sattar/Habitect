@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitect - Your Home in Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Habitect</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="power.html" class="nav-link">Power</a>
+                <a href="water.html" class="nav-link">Water</a>
+                <a href="waste.html" class="nav-link">Waste</a>
+                <a href="blss.html" class="nav-link">BLSS</a>
+                <a href="thermal.html" class="nav-link">Thermal</a>
+                <a href="radiation.html" class="nav-link">Radiation</a>
+                <a href="rigel.html" class="nav-link">Rigel AI</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">Your Home in Space</h1>
+            <p class="reveal">Surviving the void through integrated life support systems</p>
+            <button class="btn hero-btn reveal" onclick="scrollToContent()">Explore Systems</button>
+        </div>
+    </section>
+
+    <section class="problem-definition container">
+        <div class="content-card reveal">
+            <h2>The Challenge of Space Habitation</h2>
+            <p>If your home had no air, no food, no water, and radiation was attacking you everywhere, how would you live? Welcome to space — an environment with invisible enemies. Temperature can swing to deadly extremes: +127 °C in sunlight and −173 °C in shadow on the Moon. Supplies such as oxygen, water, and food must be recycled or produced, because natural regeneration is impossible. Growing food in space requires soilless agriculture and controlled environment agriculture; water must be purified and recycled (urine recycling, humidity condensate recovery). Radiation (galactic cosmic rays & solar particle events) is a major threat; doses over 1,000 mSv risk severe health damage. The Habitect project shows integrated, redundant systems to keep humans safe and productive.</p>
+        </div>
+    </section>
+
+    <section class="systems-overview container">
+        <h2 class="section-title reveal">Critical Life Support Systems</h2>
+        <div class="cards-grid">
+            <div class="card reveal" onclick="location.href='power.html'">
+                <div class="card-content">
+                    <h3>Power Systems</h3>
+                    <p>Solar arrays, nuclear reactors, and advanced energy storage</p>
+                </div>
+            </div>
+            <div class="card reveal" onclick="location.href='water.html'">
+                <div class="card-content">
+                    <h3>Water Systems</h3>
+                    <p>Advanced filtration and recycling for sustainable water</p>
+                </div>
+            </div>
+            <div class="card reveal" onclick="location.href='waste.html'">
+                <div class="card-content">
+                    <h3>Waste & Bioreactors</h3>
+                    <p>Genetic engineering and bioreactor technology</p>
+                </div>
+            </div>
+            <div class="card reveal" onclick="location.href='blss.html'">
+                <div class="card-content">
+                    <h3>BLSS</h3>
+                    <p>Bioregenerative Life Support Systems</p>
+                </div>
+            </div>
+            <div class="card reveal" onclick="location.href='thermal.html'">
+                <div class="card-content">
+                    <h3>Thermal Control</h3>
+                    <p>Managing extreme space temperatures</p>
+                </div>
+            </div>
+            <div class="card reveal" onclick="location.href='radiation.html'">
+                <div class="card-content">
+                    <h3>Radiation Monitoring</h3>
+                    <p>Protection from cosmic radiation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="video-section">
+  <div class="video-container">
+    <h1>3D Model for Space Habitat</h1>
+    <video autoplay muted loop playsinline>
+      <source src="assets/video/your home in space.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Habitect Project. Space habitat research demonstration.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

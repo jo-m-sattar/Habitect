@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigel AI - Habitect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Habitect</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="power.html" class="nav-link">Power</a>
+                <a href="water.html" class="nav-link">Water</a>
+                <a href="waste.html" class="nav-link">Waste</a>
+                <a href="blss.html" class="nav-link">BLSS</a>
+                <a href="thermal.html" class="nav-link">Thermal</a>
+                <a href="radiation.html" class="nav-link">Radiation</a>
+                <a href="rigel.html" class="nav-link">Rigel AI</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(4, 16, 38, 0.7), rgba(4, 16, 38, 0.9)), url('assets/images/rigel.jpg');">
+        <div class="hero-content">
+            <h1 class="reveal">Rigel AI</h1>
+            <p class="reveal">Intelligent monitoring and control system</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content-card reveal">
+            <h2>AI Monitoring System</h2>
+            <p>Rigel is an advanced AI agent that continuously monitors all habitat systems, detects anomalies, and triggers automated responses to ensure crew safety and system reliability.</p>
+        </div>
+
+        <div class="rigel-demo reveal">
+            <h2>Live Demo</h2>
+            <div class="demo-controls">
+                <button id="connect-rigel" class="btn">Connect to Rigel (demo)</button>
+                <button id="disconnect-rigel" class="btn" disabled>Disconnect</button>
+                <span id="connection-status" class="status-disconnected">Disconnected</span>
+            </div>
+
+            <div class="telemetry-grid">
+                <div class="telemetry-card" id="telemetry-o2-01">
+                    <h3>Oxygen Level</h3>
+                    <div class="telemetry-value">--</div>
+                    <div class="telemetry-unit">%</div>
+                </div>
+                <div class="telemetry-card" id="telemetry-co2-01">
+                    <h3>CO₂ Level</h3>
+                    <div class="telemetry-value">--</div>
+                    <div class="telemetry-unit">ppm</div>
+                </div>
+                <div class="telemetry-card" id="telemetry-rad-01">
+                    <h3>Radiation</h3>
+                    <div class="telemetry-value">--</div>
+                    <div class="telemetry-unit">μSv/h</div>
+                </div>
+                <div class="telemetry-card" id="telemetry-strain-01">
+                    <h3>Structural Strain</h3>
+                    <div class="telemetry-value">--</div>
+                    <div class="telemetry-unit">strain</div>
+                </div>
+            </div>
+
+            <div class="alerts-panel">
+                <h3>Alerts History</h3>
+                <div id="alerts-history" class="alerts-history">
+                    <!-- Alerts will appear here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card reveal">
+            <h2>Sensor Systems</h2>
+            <table class="sensor-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Sensor Type</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Structural Integrity</td>
+                        <td>Strain gauges</td>
+                        <td>Measure stress/strain to detect overloads or deformation</td>
+                    </tr>
+                    <tr>
+                        <td>Acoustic emission sensors</td>
+                        <td>Detect crack growth via ultrasonic emission</td>
+                    </tr>
+                    <tr>
+                        <td>Ultrasonic transducers</td>
+                        <td>Find subsurface cracks/voids</td>
+                    </tr>
+                    <tr>
+                        <td>Vibration sensors / accelerometers</td>
+                        <td>Detect abnormal vibration patterns (impacts, fatigue)</td>
+                    </tr>
+                    <tr>
+                        <td>Fiber Bragg Grating (FBG) sensors</td>
+                        <td>Continuous embedded strain/temperature monitoring</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Leak & Pressure</td>
+                        <td>Pressure sensors</td>
+                        <td>Detect cabin pressure drops (leaks)</td>
+                    </tr>
+                    <tr>
+                        <td>Gas leak detectors</td>
+                        <td>Identify oxygen or contaminant leaks</td>
+                    </tr>
+                    <tr>
+                        <td>Acoustic leak detectors (ultrasonic)</td>
+                        <td>Detect gas hissing</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Environmental</td>
+                        <td>Temperature sensors (RTD/thermocouples)</td>
+                        <td>Monitor thermal stresses/overheating</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity sensors</td>
+                        <td>Prevent corrosion & moisture buildup</td>
+                    </tr>
+                    <tr>
+                        <td>Radiation sensors</td>
+                        <td>Track cosmic radiation dose/rate</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Imaging & Mapping</td>
+                        <td>High-resolution RGB cameras</td>
+                        <td>Visual inspection, AI crack detection</td>
+                    </tr>
+                    <tr>
+                        <td>Infrared (thermal) cameras</td>
+                        <td>Detect leaks or stress via thermal anomalies</td>
+                    </tr>
+                    <tr>
+                        <td>LiDAR / 3D scanners</td>
+                        <td>Map geometry & detect warping</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Support & Navigation</td>
+                        <td>IMUs</td>
+                        <td>Stabilize navigation in microgravity</td>
+                    </tr>
+                    <tr>
+                        <td>Proximity sensors (IR/ultrasonic/LiDAR)</td>
+                        <td>Collision avoidance & local mapping</td>
+                    </tr>
+                    <tr>
+                        <td>Tactile/force sensors (robotic arms)</td>
+                        <td>Ensure correct contact pressure for repair</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Habitect Project. Space habitat research demonstration.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

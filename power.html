@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Systems - Habitect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Habitect</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="power.html" class="nav-link">Power</a>
+                <a href="water.html" class="nav-link">Water</a>
+                <a href="waste.html" class="nav-link">Waste</a>
+                <a href="blss.html" class="nav-link">BLSS</a>
+                <a href="thermal.html" class="nav-link">Thermal</a>
+                <a href="radiation.html" class="nav-link">Radiation</a>
+                <a href="rigel.html" class="nav-link">Rigel AI</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(4, 16, 38, 0.7), rgba(4, 16, 38, 0.9)), url('assets/images/power.jpg');">
+        <div class="hero-content">
+            <h1 class="reveal">Power Systems</h1>
+            <p class="reveal">Sustainable energy for long-duration space missions</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content-card reveal">
+            <h2>Overview</h2>
+            <p>Space systems rely on a mix of solar photovoltaics, radioisotope power systems, small fission reactors (Kilopower), and batteries. Design choices depend on mission profile (Earth orbit vs. deep space vs. planetary surface).</p>
+        </div>
+
+        <div class="content-card reveal">
+            <h2>Solar Power</h2>
+            <p>Space PV benefits from no atmosphere: higher irradiance and continuous sunlight in certain orbits.</p>
+            <p>Technologies: multi-junction GaAs, perovskite-silicon tandems, roll-out solar arrays (ROSA), tracking arrays.</p>
+            <p>Space-based solar power (SBSP) concept: build large orbital arrays, beam energy to Earth or base via microwave/laser.</p>
+        </div>
+
+        <div class="content-card reveal">
+            <h2>Nuclear Power</h2>
+            <p>RTGs (Radioisotope Thermoelectric Generators) convert heat from Pu-238 decay into electricity — extremely reliable and maintenance-free.</p>
+            <p>Generations: SNAP-series, GPHS-RTG, MMRTG, NextGen RTG.</p>
+            <p>Kilopower / KRUSTY: small fission reactor designs to provide kW-scale continuous electrical power on planetary surfaces.</p>
+        </div>
+
+        <div class="content-card reveal">
+            <h2>Energy Storage</h2>
+            <p>Batteries: Li-ion are current standard for spacecraft; careful charge management is required to prevent overcharge or full deep discharge.</p>
+            <p>Emerging solid-state batteries (SSB) offer higher energy density and safety but face commercialization challenges.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Habitect Project. Space habitat research demonstration.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
